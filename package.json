@@ -4,7 +4,9 @@
   "description": "A small utility-library for reusable code in Biblioteksentralens js-apps",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "private": false,
   "scripts": {
     "test": "react-scripts test",
@@ -22,6 +24,7 @@
     "@types/node": "^12.20.25",
     "@types/react": "^17.0.21",
     "@types/react-dom": "^17.0.9",
+    "@types/styled-components": "^5.1.14",
     "husky": "^7.0.2",
     "next": "^11.1.2",
     "prettier": "^2.4.0",

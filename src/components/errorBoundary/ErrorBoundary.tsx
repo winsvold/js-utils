@@ -1,6 +1,6 @@
 import React from "react";
 import { ErrorInfo } from "react";
-import styled from "styled-components/macro";
+import styled from "styled-components";
 import { isDevelopment, isTest } from "../../environment";
 import Alert from "../primitives/Alert";
 
@@ -22,16 +22,16 @@ const StyledPre = styled.pre`
 `;
 
 class ErrorBoundary extends React.Component<Props, State> {
-  constructor(props) {
+  constructor(props: any) {
     super(props);
     this.state = { hasError: false };
   }
 
-  static getDerivedStateFromError(error) {
+  static getDerivedStateFromError(error: any) {
     return { hasError: true };
   }
 
-  componentDidCatch(error, errorInfo) {
+  componentDidCatch(error: any, errorInfo: any) {
     if (isTest()) {
       throw error;
     }
