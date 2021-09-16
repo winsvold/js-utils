@@ -7,14 +7,14 @@ describe('groupArray', () => {
 
     expect(groupedFruits.length).toEqual(2);
 
-    expect(groupedFruits[0].groupItems).toHaveLength(2)
-    expect(groupedFruits[0].groupLabel).toBe('A')
-    expect(groupedFruits[0].groupItems).toContain('Apple')
-    expect(groupedFruits[0].groupItems).toContain('Aubergine')
+    expect(groupedFruits[0].items).toHaveLength(2)
+    expect(groupedFruits[0].label).toBe('A')
+    expect(groupedFruits[0].items).toContain('Apple')
+    expect(groupedFruits[0].items).toContain('Aubergine')
 
-    expect(groupedFruits[1].groupItems).toHaveLength(1)
-    expect(groupedFruits[1].groupLabel).toBe('L')
-    expect(groupedFruits[1].groupItems).toContain('Lemon')
+    expect(groupedFruits[1].items).toHaveLength(1)
+    expect(groupedFruits[1].label).toBe('L')
+    expect(groupedFruits[1].items).toContain('Lemon')
   })
   
   
@@ -42,8 +42,8 @@ describe('groupArray', () => {
 
     expect(groupedAttractions.length).toEqual(3);
 
-    const norskeAttraksjoner = groupedAttractions.find(attraction => attraction.groupLabel == 'Norway');
-    expect(norskeAttraksjoner?.groupItems).toHaveLength(2)
-    expect(norskeAttraksjoner?.groupItems.map(it => it.attraction)).toContain('Sinnataggen');
+    const norskeAttraksjoner = groupedAttractions.find(attraction => attraction.label === 'Norway');
+    expect(norskeAttraksjoner?.items).toHaveLength(2)
+    expect(norskeAttraksjoner?.items.map(it => it.attraction)).toContain('Sinnataggen');
   })
 })

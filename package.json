@@ -1,41 +1,53 @@
 {
   "name": "@biblioteksentralen/js-utils",
-  "version": "0.0.2",
+  "version": "0.0.7",
   "description": "A small utility-library for reusable code in Biblioteksentralens js-apps",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "files": ["dist"],
+  "private": false,
   "scripts": {
-    "test": "jest",
+    "test": "react-scripts test",
+    "dev": "react-scripts start",
     "build": "rm -rf dist && tsc",
-    "prepublishOnly": "npm run build"
+    "prepublishOnly": "yarn run build"
   },
   "author": "Biblioteksentralen",
   "license": "MIT",
   "devDependencies": {
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^11.2.7",
+    "@testing-library/user-event": "^12.8.3",
     "@types/jest": "^27.0.1",
+    "@types/node": "^12.20.25",
+    "@types/react": "^17.0.21",
+    "@types/react-dom": "^17.0.9",
     "husky": "^7.0.2",
-    "jest": "^27.2.0",
+    "next": "^11.1.2",
     "prettier": "^2.4.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-scripts": "4.0.3",
+    "styled-components": "^5.3.1",
     "typescript": "^4.4.3"
   },
-  "jest": {
-    "transform": {
-      "^.+\\.tsx?$": "ts-jest"
-    },
-    "testPathIgnorePatterns": [
-      "/node_modules/",
-      "/dist/"
+  "peerDependencies": {
+    "react": "^17.0.0"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
     ]
+  },
+  "dependencies": {
+    "date-fns": "^2.23.0",
+    "uuid": "^8.3.2"
   },
   "prettier": {
     "printWidth": 120
   },
   "lint-staged": {
     "*.{js,jsx,json,md,ts,tsx}": "prettier --write"
-  },
-  "dependencies": {
-    "date-fns": "^2.23.0",
-    "ts-jest": "^27.0.5",
-    "uuid": "^8.3.2"
   }
 }

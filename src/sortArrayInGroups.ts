@@ -1,6 +1,6 @@
 export interface Group<T> {
-  groupLabel: string;
-  groupItems: T[];
+  label: string;
+  items: T[];
 }
 
 export interface GroupedArray<T> extends Array<Group<T>> {}
@@ -21,13 +21,13 @@ export interface GroupedArray<T> extends Array<Group<T>> {}
 export function sortArrayInGroups<T>(items: T[], getGroupLabel: (element: T) => string): GroupedArray<T> {
   return items.reduce((acc: GroupedArray<T>, arrayEntry) => {
     const currentCategory = getGroupLabel(arrayEntry);
-    const categoryIndex = acc.findIndex((group) => group.groupLabel === currentCategory);
+    const categoryIndex = acc.findIndex((group) => group.label === currentCategory);
     if (categoryIndex >= 0) {
-      acc[categoryIndex].groupItems.push(arrayEntry);
+      acc[categoryIndex].items.push(arrayEntry);
     } else {
       acc.push({
-        groupLabel: currentCategory,
-        groupItems: [arrayEntry],
+        label: currentCategory,
+        items: [arrayEntry],
       });
     }
     return acc;
