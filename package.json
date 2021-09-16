@@ -1,6 +1,6 @@
 {
   "name": "@biblioteksentralen/js-utils",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "A small utility-library for reusable code in Biblioteksentralens js-apps",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
