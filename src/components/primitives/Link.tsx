@@ -24,7 +24,7 @@ interface Props extends AnchorHTMLAttributes<HTMLAnchorElement> {
   internalLink?: boolean;
 }
 
-function Link(props: Props){
+function Link(props: Props) {
   const { internalLink, href, ...rest } = props;
 
   if (internalLink) {

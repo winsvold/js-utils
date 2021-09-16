@@ -1,6 +1,5 @@
 import styled from "styled-components";
-import {sortArrayInGroups, colors} from "@biblioteksentralen/js-utils";
-
+import { sortArrayInGroups, colors } from "@biblioteksentralen/js-utils";
 
 const Style = styled.div`
   padding: 1rem 1rem 2rem;
