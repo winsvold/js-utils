@@ -1,5 +1,3 @@
-# Small utility-library in ts for reusable code in Biblioteksentralens frontend-apps
-
 ## Develop
 
 You have to use yarn for `"link:.."`-syntax in package.json to work. Don't have yarn installed? Just run `npm i -g yarn`
@@ -14,5 +12,5 @@ You have to use yarn for `"link:.."`-syntax in package.json to work. Don't have 
 To publish run
 
 ```
-   npm publish --access public
+   npm publish
 ```

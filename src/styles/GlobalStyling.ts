@@ -1,6 +1,6 @@
 import { createGlobalStyle } from "styled-components";
+import { colors } from "..";
 import { resetCss } from "./reset";
-import { colors } from "./theme";
 
 export const BiblioteksentralenBaseCss = createGlobalStyle`
   html {
