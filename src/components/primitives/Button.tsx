@@ -30,10 +30,10 @@ interface Props extends HTMLAttributes<HTMLButtonElement> {
   spinner?: boolean;
 }
 
-function Button(props: Props) {
+const Button = React.forwardRef<HTMLButtonElement, Props>((props, ref) => {
   const { children, spinner, ...rest } = props;
   return (
-    <Style {...rest}>
+    <Style {...rest} ref={ref}>
       <Label spinner={spinner}>{children}</Label>
       {spinner && (
         <SpinnerWrapper>
@@ -42,6 +42,6 @@ function Button(props: Props) {
       )}
     </Style>
   );
-}
+});
 
 export default Button;
