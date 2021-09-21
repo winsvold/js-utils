@@ -10,3 +10,4 @@ export { default as Input } from "./components/primitives/Input";
 export { default as Spinner } from "./components/primitives/Spinner";
 export * from "./styles/GlobalStyling";
 export * from "./styles/theme";
+export * from "./components/SanityAuthStatus";

@@ -1,6 +1,6 @@
 {
   "name": "@winsvold/js-utils",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A small utility-library for reusable code in my personal projects",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -33,9 +33,11 @@
     "react-dom": "^17.0.2",
     "react-scripts": "4.0.3",
     "styled-components": "^5.3.1",
+    "swr": "^1.0.1",
     "typescript": "^4.4.3"
   },
   "peerDependencies": {
+    "swr": "^1.0.1",
     "react": "^17.0.0"
   },
   "eslintConfig": {

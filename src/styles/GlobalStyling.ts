@@ -1,8 +1,8 @@
 import { createGlobalStyle } from "styled-components";
-import { colors } from "..";
+import { colors } from "./theme";
 import { resetCss } from "./reset";
 
-export const BiblioteksentralenBaseCss = createGlobalStyle`
+export const WinsvoldBaseCss = createGlobalStyle`
   html {
     font-size: 112.5%;
     font-weight: 400;

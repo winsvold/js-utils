@@ -1,11 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import Dev from "./dev";
-import { BiblioteksentralenBaseCss } from "@biblioteksentralen/js-utils";
+import { WinsvoldBaseCss } from "@winsvold/js-utils";
 
 ReactDOM.render(
   <React.StrictMode>
-    <BiblioteksentralenBaseCss />
+    <WinsvoldBaseCss />
     <Dev />
   </React.StrictMode>,
   document.getElementById("root")

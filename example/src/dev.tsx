@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components/macro";
-import { Button, ButtonLink, Alert, Input, Spinner, Link } from "@biblioteksentralen/js-utils";
+import { Button, ButtonLink, Alert, Input, Spinner, Link } from "@winsvold/js-utils";
 import ColorPalette from "./ColorPalette";
 
 const Style = styled.div`
