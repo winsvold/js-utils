@@ -1,6 +1,6 @@
 {
   "name": "@winsvold/js-utils",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A small utility-library for reusable code in my personal projects",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -27,7 +27,6 @@
     "@types/react-dom": "^17.0.9",
     "@types/styled-components": "^5.1.14",
     "husky": "^7.0.2",
-    "next": "^11.1.2",
     "prettier": "^2.4.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",

@@ -1,13 +1,14 @@
 {
   "compilerOptions": {
-    "target": "es5",
-    "module": "commonjs",
+    "target": "ES2015",
+    "module": "CommonJS",
     "lib": ["es2017", "es7", "es6", "dom"],
     "jsx": "react",
     "moduleResolution": "node",
     "declaration": true,
     "outDir": "dist",
     "strict": true,
+    "sourceMap": false,
     "esModuleInterop": true,
     "noImplicitAny": false
   },
